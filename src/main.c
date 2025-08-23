@@ -6,12 +6,13 @@ int main(){
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Raycasting Engine");
     SetTargetFPS(MAXIMUM_FPS);
 
-    // init raycasting
+    Raycasting test;
+    InitRaycasting(&test);
 
     while (!WindowShouldClose()){
         BeginDrawing();
             ClearBackground(WHITE);
-            // draw raycasting
+            DrawRaycasting(&test);
         EndDrawing();
         
         // update raycasting

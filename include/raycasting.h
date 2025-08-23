@@ -1,8 +1,10 @@
 #ifndef RAYCASTING_H
 #define RAYCASTING_H
 
+#include "map.h"
+
 typedef struct{
-    // map
+    Map map;
     // player
     // ...
 } Raycasting;

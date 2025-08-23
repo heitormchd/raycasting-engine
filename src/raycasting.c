@@ -1,13 +1,13 @@
 #include "raycasting.h"
 
 void InitRaycasting(Raycasting *raycasting){
-    // initialize map
+    InitMap(&raycasting->map);
     // initialize player
     // ...
 }
 
 void DrawRaycasting(const Raycasting *raycasting){
-    // draw map
+    DrawMap(&raycasting->map);
     // draw player
     // ...
 }
