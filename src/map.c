@@ -17,11 +17,14 @@ void InitMap(Map *map){
             map->grid[y][x] = worldMap[y][x];
         } 
     }
+
+    map->pxWidth = MAP_WIDTH * GRID_SIZE;
+    map->pxHeight = MAP_HEIGHT * GRID_SIZE;
 }
 
 void DrawMap(const Map *map){
-    int offSetX = GetScreenWidth() / 2 - MAP_WIDTH * GRID_SIZE / 2;
-    int offSetY = GetScreenHeight() / 2 - MAP_HEIGHT * GRID_SIZE / 2;
+    int offSetX = (GetScreenWidth() - map->pxWidth) / 2;
+    int offSetY = (GetScreenHeight() - map->pxHeight) / 2;
 
     for (int y = 0; y < MAP_HEIGHT; y++){
         for (int x = 0; x < MAP_WIDTH; x++){

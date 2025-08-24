@@ -1,6 +1,8 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+#include "raylib.h"
+
 #define SCREEN_WIDTH  800
 #define SCREEN_HEIGHT 600
 #define MAXIMUM_FPS   60
